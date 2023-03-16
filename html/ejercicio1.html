@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+    <style>
+        .borde {
+            border:2px 0 0 2px solid black;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <h2 style="color:coral;">Land Of Boxes Order Form</h2>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" value="Walaa Brody" style="width: 100px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 2px solid aliceblue; border-right: 2px solid aliceblue;"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" value="w.brody@wiget-sales.com" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 160px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 2px solid aliceblue; border-right: 2px solid aliceblue;"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea cols="25" rows="5" style="width: 160px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 2px solid aliceblue; border-right: 2px solid aliceblue;">162 Main Road
+Rondebosch
+Cape Town
+            </textarea></td>
+
+        </tr>
+        <tr>
+            <td>Post Code:</td>
+            <td><input type="text" name="" id="" value="7700" pattern="[0-9]{6-8}" maxlength="8" style="width: 160px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 2px solid aliceblue; border-right: 2px solid aliceblue;"></td>
+
+        </tr>
+    </table>
+
+    <table border="1" style="margin-top: 50px;">
+        <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit price </th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td><input type="number" value="3" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+            <td>R5</td>
+            <td><input type="text" value="R15" required pattern="^R\d{0,100}" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+        </tr>
+        <tr>
+            <td>Standar Box</td>
+            <td>LB200</td>
+            <td><input type="number" value="4" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+            <td>R10</td>
+            <td><input type="text" value="R40" required pattern="^R\d{0,100}" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+
+        </tr>
+        <tr>
+            <td>Premium Box/TD></td>
+            <td>LB300</td>
+            <td><input type="number" value="1" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+            <td>R15</td>
+            <td><input type="text" value="R15" required pattern="^R\d{0,100}" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+
+        </tr>
+        <tr>
+            <td>Deluxe Box/TD></td>
+            <td>LB400</td>
+            <td><input type="number" value="0" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+            <td>R20</td>
+            <td><input type="text" value="" required pattern="^R\d{0,100}" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+        </tr>
+        <tr>
+            <td>Super Deluxe BOx/TD></td>
+            <td>LB500</td>
+            <td><input type="number" value="1" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+            <td>R30</td>
+            <td><input type="text" value="R30" required pattern="^R\d{0,100}" style="width: 80px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid white; border-right: 1px solid white;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:end">Total</td>
+            <td>R100</td>
+        </tr>
+    </table>
+    <h3>Credit Card Details</h3>
+    <table>
+        <tr>
+            <td>Card Type: </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="cc" id=""><label>Mastercard</label></td>
+            <td>Card Numers:</td>
+            <td><input type="text" value="45645" style="width: 100px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 3px solid aliceblue; border-right: 3px solid aliceblue;" ></td>
+
+        </tr>
+        <tr>
+            <td><input type="radio" name="cc" id=""><label>Visa</label></td>
+            <td>Expiry Date: </td>
+            <td><input type="text" value="03/99"  style="width: 100px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 3px solid aliceblue; border-right: 3px solid aliceblue;"></td>
+
+        </tr>
+        <tr>
+            <td><input type="radio" name="cc" id="" ><label >American Express</label></td>
+
+        </tr>
+        <tr>
+            <td><input type="radio" name="cc" id=""><label>Diners Club</label></td>
+
+        </tr>
+    </table style="margin-bottom: 20px;">
+    <table>
+        <tr>
+            <td>Delivery Address:</td>
+            <td><textarea cols="25" rows="5" style="width: 200px; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 4px solid aliceblue; border-right: 4px solid aliceblue;">162 Main Road
+Rondebosch
+Cape Town
+            </textarea></td>
+        </tr>
+    </table>
+    <button>Send Order</button>
+    <button>Clear form</button>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+        #title {
+            margin: 0 20%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td colspan="2" id="title"> Basketball Registration Form</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Player Name</label>
+                    <input type="text" placeholder="First">  <input type="text" placeholder="Last">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Ace</label> 
+                    <input type="number" name="" style="width: 200px;" min="30">
+                </td>
+
+                <td><label for="">Email</label>
+                    <input type="email" name="" pattern="[a-zA-Z0-9._%+-]+@[\w.-]+\.[com]{3}">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Address</label>
+                    <label><input type="text" placeholder="Street Address" style="width: 375px;"></label> 
+                    <input type="text"  placeholder="Street Address Line 2" style="width: 375px;">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="City" style="width: 200px;">
+                </td> 
+                <td>
+                    <input type="text" placeholder="Region"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Postal/Zip Code" style="width: 200px;">
+                </td>
+                <td>
+                   <input type="text" placeholder="Country" list="country">
+                   <datalist id="country">
+                    <option value="colombia"></option>
+                    <option value="venezuela"></option>
+                    <option value="panama"></option>
+                   </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Home Phone <br>
+                    <input type="number" placeholder="#### #### ####" style="width: 200px;">
+                </td>
+                <td>Cell phone <br>
+                    <input type="number" placeholder="#### #### ####">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

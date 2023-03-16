@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario #2</title>
+    <style>
+        form {
+             width: 35%;
+        }
+
+         label, button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+              <p>Salution</p>
+              <select name="" id="">
+                <option>--None--</option>
+                <option value="1">Mr</option>
+                <option value="2">Ms</option>
+                <option value="3">Mrs</option>
+            </select>
+            <label>First Name:<input type="text" pattern="(Mr|Ms|Mrs)\s+[A-Za-z]+(\s+[A-Za-z]+)?"></label>
+            <label>Last Name:<input type="text" pattern="(Mr|Ms|Mrs)\s+[A-Za-z]+(\s+[A-Za-z]+)?"></label> 
+            <label>Gender: <input type="radio" name="radio"> Male <input type="radio" name="radio" >Female</label>
+            <label>Email: <input type="email" pattern="[a-zA-Z0-9._%+-]+@cecar.edu.co"></label> 
+            <label>Date of Birth: <input type="date"></label>
+            <label>Address:</label><textarea name="" id="" cols="30" rows="10" maxlength="100"></textarea>
+            <button>submit</button> 
+        </fieldset>
+    </form>
+</body>
+</html>
